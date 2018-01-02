@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Kvadratická rovnice</string>
+    <string name="A">Zadejte hodnotu a</string>
+    <string name="B">Zadejte hodnotu b</string>
+    <string name="C">Zadejte hodnotu c</string>
+    <string name="buttonResult">vypočítej</string>
+    <string name="rovniceView"></string>
+    <string name="resultView"></string>
+</resources>
