@@ -89,9 +89,9 @@ public class MainActivity extends AppCompatActivity {
         } else if (discriminant == 0 && result1 != 0 && result2 != 0) {
             resultView.setText("Rovnice má jedno řešení: " + result1);
         } else if (discriminant < 0) {
-            resultView.setText("Rovnice nemá řešení v oboru reálných hodnot");
+            resultView.setText("Rovnice nemá řešení v oboru reálných čísel");
         }
-        
+
         aInput.setText("");
         bInput.setText("");
         cInput.setText("");
