@@ -64,31 +64,33 @@ public class MainActivity extends AppCompatActivity {
 
         if (a == 0 && b == 0 && c == 0) {
             rovniceView.setText("0 = 0");
+            resultView.setText("Rovnice má nekonečně mnoho řešení");
         } else if (a == 0 && b == 0) {
             rovniceView.setText(c + " = 0");
+            resultView.setText("Rovnice nemá řešení");
         } else if (a == 0 && c == 0) {
             rovniceView.setText(b + "x = 0");
+            resultView.setText("Rovnice má jedno řešení: " + result1);
         } else if (b == 0 && c == 0) {
             rovniceView.setText(a + "x² = 0");
+            resultView.setText("Rovnice má jedno řešení: " + result1);
         } else if (a == 0) {
             rovniceView.setText(b + "x + " + c + " = 0");
+            resultView.setText("Rovnice má jedno řešení: " + result1);
         } else if (b == 0) {
             rovniceView.setText(a + "x² + " + c + " = 0");
+            resultView.setText("Rovnice má jedno řešení: " + result1);
         } else if (c == 0) {
             rovniceView.setText(a + "x² + " + b + "x = 0");
+            resultView.setText("Rovnice má dvá kořeny:\n\nPrvní kořen je: " + result1 + "\nDruhý kořen je: " + result2);
         } else {
             rovniceView.setText(a + "x² + " + b + "x + " + c + " = 0");
+            resultView.setText("Rovnice má dvá kořeny:\n\nPrvní kořen je: " + result1 + "\nDruhý kořen je: " + result2);
         }
 
-        if (a == 0 && b == 0 && c == 0) {
-            resultView.setText("Rovnice má nekonečně mnoho řešení");
-        } else if (a == 0 && b==0) {
-            resultView.setText("Rovnice nemá řešení");
         } else if (discriminant > 0) {
             resultView.setText("Rovnice má dvá kořeny:\n\nPrvní kořen je: " + result1 + "\nDruhý kořen je: " + result2);
-        } else if (discriminant == 0 && result1 != 0 && result2 != 0) {
-            resultView.setText("Rovnice má jedno řešení: " + result1);
-        } else if (discriminant < 0) {
+        }else if (discriminant < 0) {
             resultView.setText("Rovnice nemá řešení v oboru reálných čísel");
         }
 
