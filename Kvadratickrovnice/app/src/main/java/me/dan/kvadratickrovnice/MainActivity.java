@@ -69,7 +69,6 @@ public class MainActivity extends AppCompatActivity {
             resultView.setText("Rovnice nemá řešení");
         } else if (a == 0 && c == 0) {
             rovniceView.setText(b + "x = 0");
-<<<<<<< HEAD
             resultView.setText("Rovnice má jedno řešení: 0");
         } else if (b == 0 && c == 0) {
             rovniceView.setText(a + "x² = 0");
@@ -83,36 +82,15 @@ public class MainActivity extends AppCompatActivity {
             result1 = Math.sqrt(-c / a);
             result2 = -Math.sqrt(-c / a);
             resultView.setText("Rovnice má dvá kořeny:\n\nPrvní kořen je: " + result1 + "\nDruhý kořen je: " + result2);
-=======
-            resultView.setText("Rovnice má jedno řešení: " + result1);
-        } else if (b == 0 && c == 0) {
-            rovniceView.setText(a + "x² = 0");
-            resultView.setText("Rovnice má jedno řešení: " + result1);
-        } else if (a == 0) {
-            rovniceView.setText(b + "x + " + c + " = 0");
-            resultView.setText("Rovnice má jedno řešení: " + result1);
-        } else if (b == 0) {
-            rovniceView.setText(a + "x² + " + c + " = 0");
-            resultView.setText("Rovnice má jedno řešení: " + result1);
->>>>>>> 3cb125cb6dec5407500df3529513b541afcdf153
         } else if (c == 0) {
             rovniceView.setText(a + "x² + " + b + "x = 0");
             resultView.setText("Rovnice má dvá kořeny:\n\nPrvní kořen je: " + result1 + "\nDruhý kořen je: " + result2);
         } else {
             rovniceView.setText(a + "x² + " + b + "x + " + c + " = 0");
-<<<<<<< HEAD
             resultView.setText("Rovnice má dvá kořeny:\n\nPrvní kořen je: " + result1 + "\nDruhý kořen je: " + result2);
         }
         if (discriminant < 0)
         {
-=======
-            resultView.setText("Rovnice má dvá kořeny:\n\nPrvní kořen je: " + result1 + "\nDruhý kořen je: " + result2);
-        }
-
-        } if (discriminant > 0) {
-            resultView.setText("Rovnice má dvá kořeny:\n\nPrvní kořen je: " + result1 + "\nDruhý kořen je: " + result2);
-        } else if (discriminant < 0) {
->>>>>>> 3cb125cb6dec5407500df3529513b541afcdf153
             resultView.setText("Rovnice nemá řešení v oboru reálných čísel");
         }
         if(discriminant == 0 && a != 0 && b != 0 && c != 0)
