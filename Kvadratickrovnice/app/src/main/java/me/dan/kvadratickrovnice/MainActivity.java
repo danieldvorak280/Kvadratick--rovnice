@@ -88,9 +88,9 @@ public class MainActivity extends AppCompatActivity {
             resultView.setText("Rovnice má dvá kořeny:\n\nPrvní kořen je: " + result1 + "\nDruhý kořen je: " + result2);
         }
 
-        } else if (discriminant > 0) {
+        } if (discriminant > 0) {
             resultView.setText("Rovnice má dvá kořeny:\n\nPrvní kořen je: " + result1 + "\nDruhý kořen je: " + result2);
-        }else if (discriminant < 0) {
+        } else if (discriminant < 0) {
             resultView.setText("Rovnice nemá řešení v oboru reálných čísel");
         }
 
